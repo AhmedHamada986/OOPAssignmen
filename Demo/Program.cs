@@ -172,21 +172,25 @@ namespace Demo
             //typeA.Fun02();  
 
 
-            // internal --> same namespace(project)
+            // internal -->in claas or any class in same namespace(project)
             // protected -->  class and class which inherited from class 
-            // protected internal -->
+            // protected internal --> in class or any class or any class in namespace
         }
 
         public class Person {
     
             internal protected int id; 
-            protected string name;
-            private protected int p;
-        
+            protected string name; // class or any class inherited from class  
+            private protected int p;// in class itself 
+
+            public void Fun1() {
+                Console.WriteLine("name");
+            
+            }
         
         }
         public class student : Person { 
-       
+        
 
           
         }
